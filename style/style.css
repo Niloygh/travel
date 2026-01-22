@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
+    border: none;
     
 }
 
@@ -16,8 +17,17 @@
     margin: 0 auto;
 }
 
+
 .flex{
     display: flex;
+}
+.btn{
+    padding: 5px 20px;
+    border-radius: 8px;
+    background-color: #FF5400;
+    color: white;
+    cursor: pointer;
+    
 }
 
 
@@ -52,3 +62,83 @@ nav ul li a{
     color: #424247;
 }
 
+
+/* Banner / Hero section  */
+.banner-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.452)), url(../assets/img/Group\ 13\ \(1\)\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+
+    color: white;
+    min-height: 500px;
+    padding: 40px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.rounded-mic-parent {
+    position: relative;
+}
+
+.banner-section .rounded-mic-parent  .rounded-shape{
+    width: 170px;
+    height: auto;
+}
+.banner-section .rounded-mic-parent .mic{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.banner-section .rounded-mic-parent span{
+    background: #00ff88;
+    color: black;
+    border: 2px solid black;
+    font-weight: 800;
+    padding: 6px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 347px;
+}
+
+
+
+.banner-section>div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.banner-section h2{
+    font-size: 64px;
+}
+.banner-section p{
+    max-width: 650px;
+}
+
+.banner-section > div > form{
+    background-color: rgba(255, 250, 250, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.banner-section > div > form select,
+.banner-section > div > form input[type="text"] {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: block;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: rgba(19, 19, 24, 0.5);
+}
