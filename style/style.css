@@ -172,3 +172,70 @@ nav ul li a{
     width: 150px;
     height: 50px;
 }
+
+
+/* choose section  */
+.choose  {
+    margin-top: 100px;
+}
+.section-heading{
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.section-heading h1{
+    font-size: 40px;
+}
+.section-heading p{
+    margin: 24px 0 48px;    
+}
+
+.destination{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 10px;
+    
+}
+
+.destination div:nth-child(1),
+.destination div:nth-child(2)
+{
+    grid-column: span 6 ;
+}
+
+.destination div:nth-child(3){
+    grid-column: span 4;
+}
+.destination div:nth-child(4){
+    grid-column: span 5;
+}
+.destination div:nth-child(5){
+    grid-column: span 3;
+}
+.destination div:nth-child(6){
+    grid-column: span 5;
+}
+.destination div:nth-child(7){
+    grid-column: span 7;
+}
+
+
+
+
+.destination > div{
+    position: relative;
+}
+.destination strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+
+}
+.destination > div img{
+    width: 100%;
+    height: 100%;
+    
+}
