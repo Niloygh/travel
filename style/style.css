@@ -27,6 +27,7 @@
     background-color: #FF5400;
     color: white;
     cursor: pointer;
+    font-size: 20px;
     
 }
 
@@ -141,4 +142,33 @@ nav ul li a{
     outline: none;
     border: none;
     color: rgba(19, 19, 24, 0.5);
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/* tour  */
+.tour{
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.tour .content{
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tour ul{
+    flex-direction: column;
+    max-width: 525px;
+    gap: 24px;
+}
+
+.tour .content .btn{
+    width: 150px;
+    height: 50px;
 }
